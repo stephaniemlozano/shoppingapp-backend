@@ -21,3 +21,4 @@ app.get('/', async (request, response) => {
   const allProducts = await products.find().toArray()
   response.send(allProducts)
 })
+
