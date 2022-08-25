@@ -16,9 +16,7 @@ app.use(express.json())
 
 app.listen(4040, () => console.log('API running on port 4040'))
 
-
 app.get('/', async (request, response) => {
   const allProducts = await products.find().toArray()
   response.send(allProducts)
 })
-
